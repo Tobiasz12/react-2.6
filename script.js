@@ -23,6 +23,7 @@ var Counter = React.createClass({
 	componentWillMount() {
 		console.log('')
 	},
+
 	componentWillReceiveProps() {    
 		console.log('dodawanie nowych właściwość')
 	},
@@ -41,6 +42,7 @@ var Counter = React.createClass({
 	componentWillUnmount() {
 		console.log('nasłuchiwanie na zdarzenia,odpinania timerów')
 	},
+
 	render: function(){
 		return React.createElement('div',{},
 			React.createElement('button',{className: "fa fa-arrow-left",onClick: this.increment}),
@@ -50,7 +52,7 @@ var Counter = React.createClass({
 	},
 
 	componentDidMount() {
-		console.log('dodanie EventListeners')
+		console.log('')
    }
 
 });
